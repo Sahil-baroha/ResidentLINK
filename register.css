@@ -1,18 +1,52 @@
-body{
+@font-face {
+    font-family: General Sans;
+    src: url("GeneralSans-Medium.otf");
+    src: url("GeneralSans-Regular.otf");    
+}
+ body{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 16px;
-}
-.register-container{
-    display: grid;
-    height: max-content;
-    width: 90%;
-    padding: 20px;
-    border: 2px solid black;
-    border-radius: 15px;
+    background-color: black;
+    color: white;
+    font-family: 'General Sans', sans-serif;    
+} 
+ 
+
+#container{
+border: 2px solid whitesmoke;
+border-radius: 15px;
+padding: 10px;
 
 }
-.form-group{
-    margin: bottom 20px;
+.inputs{
+    display: flex;
+    gap: 20px; /* Spacing between grid items */
+    margin: 10px;
+    height: 80vh;
+    width: 80vw;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+input,select{
+    color: aliceblue;
+    margin: 10px;
+    padding: 4px;
+    border-radius: 8px;
+    background-color: rgb(40, 35, 35);
+    box-shadow: 5px 5px lightgreen;
+    width: 150px;
+}
+.sub-btn{
+    padding: 5px;
+    font-size: large;
+    margin-top: 10px;
+    background-color: lightgreen;
+border-radius: 9px;
+}
+.sub-btn:hover{
+    border: 2px solid lightgreen;
+    background-color: white;
+color: black;    
 }
